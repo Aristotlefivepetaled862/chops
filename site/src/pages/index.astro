@@ -1,14 +1,130 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import Features from '../components/Features.astro';
-import OpenSource from '../components/OpenSource.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Chops — Your AI agent skills, finally organized.">
-  <Hero />
-  <Features />
-  <OpenSource />
-  <Footer />
+  <main>
+    <div class="hero">
+      <img src="/icon.png" alt="Chops" class="icon" />
+      <h1>Chops</h1>
+      <p class="tagline">Your AI agent skills, finally organized.</p>
+      <p class="description">
+        One app to browse, edit, and manage skills across
+        Claude Code, Cursor, Codex, Windsurf, and Amp.
+        Free and open source.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/Shpigford/chops/releases/latest" class="btn primary">Download for macOS</a>
+        <a href="https://github.com/Shpigford/chops" class="btn secondary">GitHub</a>
+      </div>
+      <p class="requires">Requires macOS Tahoe (26) or later</p>
+    </div>
+
+    <img src="/screenshot.png" alt="Chops app screenshot" class="screenshot" />
+
+    <footer>
+      <p>&copy; 2026 Chops &middot; <a href="https://github.com/Shpigford/chops">Open source</a> under MIT</p>
+    </footer>
+  </main>
 </Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    max-width: 420px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: opacity 0.15s;
+  }
+
+  .btn:hover {
+    opacity: 0.85;
+  }
+
+  .btn.primary {
+    background: var(--gradient);
+    color: white;
+  }
+
+  .btn.secondary {
+    background: #f0f0f0;
+    color: var(--text);
+  }
+
+  .requires {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+  }
+
+  .screenshot {
+    max-width: 960px;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+  }
+
+  footer a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

@@ -17,6 +17,7 @@
   },
   "groups" : [
     {
+      "hidden" : true,
       "layers" : [
         {
           "blend-mode" : "normal",
@@ -30,6 +31,30 @@
           "opacity" : 1,
           "position" : {
             "scale" : 30,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "fill" : "none",
+          "image-name" : "axe-duotone-regular-full.svg",
+          "name" : "axe-duotone-regular-full",
+          "position" : {
+            "scale" : 1.2,
             "translation-in-points" : [
               0,
               0
