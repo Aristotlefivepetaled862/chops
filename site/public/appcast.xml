@@ -7,11 +7,11 @@
       <sparkle:version>1.0.0</sparkle:version>
       <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <pubDate>Wed, 18 Mar 2026 18:22:18 +0000</pubDate>
+      <pubDate>Wed, 18 Mar 2026 18:25:50 +0000</pubDate>
       <enclosure
         url="https://github.com/Shpigford/chops/releases/download/v1.0.0/Chops.dmg"
-        sparkle:edSignature="ppL2fK1YspP5COlAuZN3MFUznbPiau5B8pKpc8jrnf446daFu5NpCnIlP4jOPh1pJRp5Gd41JryMuKq4LUiuDA=="
-        length="3508255"
+        sparkle:edSignature="2i7ZBb9LiQpUeNTs1qB8l1pMRZuoBYEjfRj9Weg3vhTQZeqJMerJjfwDC1rsH5AbOVvkLH/bk0yJaB+RrBrODg=="
+        length="3508234"
         type="application/octet-stream"
       />
     </item>
