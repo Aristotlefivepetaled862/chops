@@ -136,9 +136,13 @@ struct SettingsView: View {
                 Button("@Shpigford") {
                     NSWorkspace.shared.open(URL(string: "https://x.com/Shpigford")!)
                 }
+
+                Button("GitHub") {
+                    NSWorkspace.shared.open(URL(string: "https://github.com/Shpigford/chops")!)
+                }
             }
 
-            Text("\u{00A9} 2026 Josh Pigford. MIT License.")
+            Text("Free and open source under the MIT License.")
                 .font(.caption)
                 .foregroundStyle(.tertiary)
         }
