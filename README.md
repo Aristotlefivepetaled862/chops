@@ -8,7 +8,8 @@
 
 <p align="center">
   <a href="https://github.com/Shpigford/chops/releases/latest/download/Chops.dmg">Download</a> &middot;
-  <a href="https://chops.md">Website</a>
+  <a href="https://chops.md">Website</a> &middot;
+  <a href="https://x.com/Shpigford">@Shpigford</a>
 </p>
 
 <p align="center">
@@ -49,4 +50,3 @@ open Chops.xcodeproj
 
 MIT — see [LICENSE](LICENSE).
 
-Made by [@Shpigford](https://x.com/Shpigford)
