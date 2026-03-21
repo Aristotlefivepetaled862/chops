@@ -2,9 +2,9 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-03-21
+
 - Skills registry browser for discovering and installing community skills
-- `/release` skill for automated version management and release pipeline
-- `/setup` skill and expanded developer onboarding docs
 
 ## [1.1.0] - 2026-03-18
 
