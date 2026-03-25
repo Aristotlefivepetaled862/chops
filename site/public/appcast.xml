@@ -3,6 +3,20 @@
   <channel>
     <title>Chops</title>
     <item>
+      <title>Version 1.7.0</title>
+      <sparkle:version>1.7.0</sparkle:version>
+      <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <pubDate>Wed, 25 Mar 2026 01:00:41 +0000</pubDate>
+      <description><![CDATA[<ul><li>Rich markdown theme in skill preview</li><li>Support for Antigravity, OpenCode, Pi, Global Agents, and Copilot CLI as tool sources</li><li>Sidebar hides tools that aren't installed</li><li>Non-skill config files hidden from All Skills view</li><li>Fixed Sparkle minimum macOS version requirement</li></ul>]]></description>
+      <enclosure
+        url="https://github.com/Shpigford/chops/releases/download/v1.7.0/Chops.dmg"
+        sparkle:edSignature="igfT1d3JChZNaJt6/o5bLuGAGVbejCvOeNhsfF0SKVls/ypS+cBIbo1G5Rr+TLi3I72qj/I+x/uDct7uEOCpAQ=="
+        length="5066617"
+        type="application/octet-stream"
+      />
+    </item>
+    <item>
       <title>Version 1.6.0</title>
       <sparkle:version>1.6.0</sparkle:version>
       <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
