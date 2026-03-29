@@ -3,6 +3,20 @@
   <channel>
     <title>Chops</title>
     <item>
+      <title>Version 1.11.0</title>
+      <sparkle:version>1.11.0</sparkle:version>
+      <sparkle:shortVersionString>1.11.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <pubDate>Sun, 29 Mar 2026 00:14:42 +0000</pubDate>
+      <description><![CDATA[<ul><li>Chat with AI agents directly inside Chops (ACP support)</li><li>Cancel in-progress AI requests</li><li>Floating AI button for quick access to the compose panel</li><li>Improved compose panel layout and usability</li></ul>]]></description>
+      <enclosure
+        url="https://github.com/Shpigford/chops/releases/download/v1.11.0/Chops.dmg"
+        sparkle:edSignature="VoAIFNjRVMUwqUsuTdEN+MHKD6o61PWqKl51RdzEFkLcOIahsXp5WcZd3joqcYmdM92RFcJ+6O2iZuqd+7LnCg=="
+        length="5825308"
+        type="application/octet-stream"
+      />
+    </item>
+    <item>
       <title>Version 1.10.0</title>
       <sparkle:version>1.10.0</sparkle:version>
       <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
