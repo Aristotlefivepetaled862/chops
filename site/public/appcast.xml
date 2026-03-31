@@ -3,6 +3,20 @@
   <channel>
     <title>Chops</title>
     <item>
+      <title>Version 1.13.1</title>
+      <sparkle:version>1.13.1</sparkle:version>
+      <sparkle:shortVersionString>1.13.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 31 Mar 2026 21:27:21 +0000</pubDate>
+      <description><![CDATA[<ul><li>Prevents data loss when the database schema changes between versions</li></ul>]]></description>
+      <enclosure
+        url="https://github.com/Shpigford/chops/releases/download/v1.13.1/Chops.dmg"
+        sparkle:edSignature="dnxFZ7ZuJJf1JDQ1ftQlwNi7pQ8S8BVlsnRUz3+4pTu8hWhzdRyC22CGC48YZI5J2/nTTm0gRnr06+pQE6JGDw=="
+        length="5951732"
+        type="application/octet-stream"
+      />
+    </item>
+    <item>
       <title>Version 1.13.0</title>
       <sparkle:version>1.13.0</sparkle:version>
       <sparkle:shortVersionString>1.13.0</sparkle:shortVersionString>
