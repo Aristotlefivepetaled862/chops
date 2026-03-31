@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.13.1] - 2026-03-31
+
+- Prevents data loss when the database schema changes between versions
+
 ## [1.13.0] - 2026-03-31
 
 - New skills default to Global and are automatically symlinked to all installed agents
