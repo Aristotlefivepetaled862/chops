@@ -3,6 +3,20 @@
   <channel>
     <title>Chops</title>
     <item>
+      <title>Version 1.13.0</title>
+      <sparkle:version>1.13.0</sparkle:version>
+      <sparkle:shortVersionString>1.13.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <pubDate>Tue, 31 Mar 2026 17:32:31 +0000</pubDate>
+      <description><![CDATA[<ul><li>New skills default to Global and are automatically symlinked to all installed agents</li><li>Convert any tool-specific skill to Global via the right-click menu</li><li>Global tool source now appears in the sidebar when skills exist</li><li>AI Assist no longer writes files until you accept the diff</li><li>Fixed false "not installed" detection for tools using symlinked agent directories</li></ul>]]></description>
+      <enclosure
+        url="https://github.com/Shpigford/chops/releases/download/v1.13.0/Chops.dmg"
+        sparkle:edSignature="6qjRyTb8p5VRH5F+Nstf+WM3XTO3259d+CthO7gZ48h6N4mT5Ea5rI4NuR9I6TnomaoxjhVrFFYord658pXjAw=="
+        length="5949433"
+        type="application/octet-stream"
+      />
+    </item>
+    <item>
       <title>Version 1.12.0</title>
       <sparkle:version>1.12.0</sparkle:version>
       <sparkle:shortVersionString>1.12.0</sparkle:shortVersionString>
