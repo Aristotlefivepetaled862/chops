@@ -3,6 +3,20 @@
   <channel>
     <title>Chops</title>
     <item>
+      <title>Version 1.14.0</title>
+      <sparkle:version>1.14.0</sparkle:version>
+      <sparkle:shortVersionString>1.14.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <pubDate>Fri, 03 Apr 2026 11:06:49 +0000</pubDate>
+      <description><![CDATA[<ul><li>Add Hermes as a tool source</li><li>Fixed editor diffs overwriting content that hadn't changed</li><li>Added Opus model option to the Claude agent model picker</li></ul>]]></description>
+      <enclosure
+        url="https://github.com/Shpigford/chops/releases/download/v1.14.0/Chops.dmg"
+        sparkle:edSignature="Xy9xDmjsefj9MxkDI+sJR+fDMNZfVcYqX5eR+qTtW20FYf7bSDz3bHr30yaYjOnPxha3rmjzh7vFXR7IdVD5DQ=="
+        length="5952178"
+        type="application/octet-stream"
+      />
+    </item>
+    <item>
       <title>Version 1.13.1</title>
       <sparkle:version>1.13.1</sparkle:version>
       <sparkle:shortVersionString>1.13.1</sparkle:shortVersionString>
